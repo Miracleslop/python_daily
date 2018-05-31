@@ -1,0 +1,2 @@
+class ConvertRole(object):
+    pass
