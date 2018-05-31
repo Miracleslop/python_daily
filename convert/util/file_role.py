@@ -29,8 +29,11 @@ class FileRole(object):
     # read file and store input_data
     # regex is param of split
     def read(self, regex):
+
+        #   path is file's path
+        #   read a path and add a list to __input_data
         def read_data(path):
-            with open(path) as f:
+            with open(path, 'r') as f:
                 for line in f.readlines():
                     temp = []
                     for col in line.split(regex):
@@ -56,16 +59,37 @@ class FileRole(object):
     # f is function
     def __convert(self, *fun):
         for f in fun:
+            LOG.debug('execute input_data type: %s,  fun type : %s' % (type(self.__input_data), type(f)))
             self.__output_data.append(f(self.__input_data))
 
     # write data to output_data
     # sign: 1 2 3 4 5
-    def write(self, sign, fun):
-        self.__convert(fun)
+    # r     以只读方式打开文件。文件的指针将会放在文件的开头。这是默认模式。
+    # rb    以二进制格式打开一个文件用于只读。文件指针将会放在文件的开头。这是默认模式。
+    # r+    打开一个文件用于读写。文件指针将会放在文件的开头。
+    # rb+   以二进制格式打开一个文件用于读写。文件指针将会放在文件的开头。
+    # w     打开一个文件只用于写入。如果该文件已存在则将其覆盖。如果该文件不存在，创建新文件。
+    # wb    以二进制格式打开一个文件只用于写入。如果该文件已存在则将其覆盖。如果该文件不存在，创建新文件。
+    # w+    打开一个文件用于读写。如果该文件已存在则将其覆盖。如果该文件不存在，创建新文件。
+    # wb+   以二进制格式打开一个文件用于读写。如果该文件已存在则将其覆盖。如果该文件不存在，创建新文件。
+    # a     打开一个文件用于追加。如果该文件已存在，文件指针将会放在文件的结尾。也就是说，新的内容将会被写入到已有内容之后。如果该文件不存在，创建新文件进行写入。
+    # ab    以二进制格式打开一个文件用于追加。如果该文件已存在，文件指针将会放在文件的结尾。也就是说，新的内容将会被写入到已有内容之后。如果该文件不存在，创建新文件进行写入。
+    # a+    打开一个文件用于读写。如果该文件已存在，文件指针将会放在文件的结尾。文件打开时会是追加模式。如果该文件不存在，创建新文件用于读写。
+    # ab+   以二进制格式打开一个文件用于追加。如果该文件已存在，文件指针将会放在文件的结尾。如果该文件不存在，创建新文件用于读写。
+    def write(self, *fun):
 
-        def write_data(path, output_data):
-            with open(path) as f:
-                for 
+        """the param must is *fun and is not fun !!! """
+        #   self.__convert(fun)
+        self.__convert(*fun)
+
+        #   path is file's path
+        #   open file's path and write a list in __output_data
+        def write_data(path, out_list):
+            with open(path, 'w') as f:
+                for row in out_list:
+                    for cell in row:
+                        f.write('%s\t' % cell)
+                    f.write('\n')
 
         if os.path.isfile(self.__output_path):
             LOG.debug('start write data of file:  ' + self.__output_path)
@@ -73,12 +97,10 @@ class FileRole(object):
             LOG.debug('end write data of file')
         elif os.path.isdir(self.__output_path):
             LOG.debug('start write data of dir:  ' + self.__output_path)
-            for x in os.listdir(self.__output_path):
-                t = 'output_' + sign
-                if x.find(t) != -1:
-                    write_data(os.path.join(self.__output_path, x), self.__output_data)
-                    LOG.debug('end write data of dir, file name:' + x)
-                    break
+            for index, outlist in enumerate(self.__output_data):
+                file_name = 'output_' + (index + 1).__str__()
+                write_data(os.path.join(self.__output_path, file_name), outlist)
+                LOG.debug('end write data of dir, file name: %s, data_rows: %d' % (file_name, len(outlist)))
         else:
             raise IOError('write error in path : \'' + self.__output_path + '\'')
-        LOG.debug('wirte data is complete')
+        LOG.debug('write data is complete')
