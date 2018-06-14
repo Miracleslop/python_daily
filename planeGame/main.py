@@ -34,7 +34,7 @@ def main():
             # 设定需要显示的⻜机图⽚
             hero.display()
             # listen key operation
-            print(pygame.event.get())
+            # print(pygame.event.get())
             if KeyControl.listen_key(hero):
                 break
 

@@ -16,10 +16,12 @@ class KeyControl(object):
 
     @staticmethod
     def listen_key(entity):
-        for event in pygame.event.get(KEYDOWN):
+        is_exit = False
+        for event in pygame.event.get([KEYDOWN, QUIT]):
             if event.type == QUIT:
                 lg.debug('game exit!')
-                return True
+                is_exit = True
+                break
             elif event.type == KEYDOWN:
                 if event.key == K_a or event.key == K_LEFT:
                     lg.debug('operate left key')
@@ -36,4 +38,4 @@ class KeyControl(object):
                 elif event.key == K_SPACE:
                     lg.debug('operate space key')
                     entity.attack()
-                return False
+        return is_exit
