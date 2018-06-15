@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="984cc80d-bb61-4a14-82d6-b2f75000c3ca" name="Default" comment="">
+    <list default="true" id="984cc80d-bb61-4a14-82d6-b2f75000c3ca" name="Default" comment="add convert method">
+      <change afterPath="$PROJECT_DIR$/concurrente/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/convert/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convert/util/convert_role.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert/util/convert_role.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convert/util/file_role.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert/util/file_role.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/input_data/input_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/input_data/input_2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/output_data/output_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/output_data/output_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convert/test/test_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert/test/test_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convert/util/convert_role.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/convert/util/file_role.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tempLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/logFile/2018.6.13-log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/log_config.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/planeGame/entity/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/planeGame/entity/entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planeGame/entity/hero_plane.py" beforeDir="false" afterPath="$PROJECT_DIR$/planeGame/entity/hero_plane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planeGame/key_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/planeGame/key_control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planeGame/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/planeGame/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,64 +26,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/daily_strutil$main.coverage" NAME="main Coverage Results" MODIFIED="1527830843654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convert" />
+    <SUITE FILE_PATH="coverage/daily_strutil$class_test_main.coverage" NAME="class_test_main Coverage Results" MODIFIED="1528774800823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convert/test" />
+    <SUITE FILE_PATH="coverage/daily_strutil$main.coverage" NAME="main Coverage Results" MODIFIED="1529041752205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/planeGame" />
+    <SUITE FILE_PATH="coverage/daily_strutil$test_main.coverage" NAME="test_main Coverage Results" MODIFIED="1528543514409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convert/test" />
     <SUITE FILE_PATH="coverage/daily_try$test_main.coverage" NAME="test_main Coverage Results" MODIFIED="1527582774622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string-handle/main/test" />
+    <SUITE FILE_PATH="coverage/daily_strutil$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1529046232732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/concurrente" />
     <SUITE FILE_PATH="coverage/daily_try$study.coverage" NAME="study Coverage Results" MODIFIED="1527583507533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string-handle/main/test" />
+    <SUITE FILE_PATH="coverage/daily_strutil$Logger.coverage" NAME="Logger Coverage Results" MODIFIED="1528874424847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/logger" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/convert/main.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/concurrente/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="convert_role.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/convert/util/convert_role.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input_2.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/input_data/input_2.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input_1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/input_data/input_1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="output_1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/output_data/output_1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="file_role.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/convert/util/file_role.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1633">
-              <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
+            <state relative-caret-position="186">
+              <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#40#102#0" />
+                <element signature="e#130#193#0" />
+                <element signature="e#243#829#0" />
               </folding>
             </state>
           </provider>
@@ -118,6 +89,24 @@
         <option value="$PROJECT_DIR$/convert/util/file_role.py" />
         <option value="$PROJECT_DIR$/convert/main.py" />
         <option value="$PROJECT_DIR$/convert/util/convert_role.py" />
+        <option value="$PROJECT_DIR$/convert/test/test_main.py" />
+        <option value="$PROJECT_DIR$/play/main.py" />
+        <option value="$PROJECT_DIR$/planeGame/logger.py" />
+        <option value="$PROJECT_DIR$/logger/name_config.py" />
+        <option value="$PROJECT_DIR$/planeGame/log_config.ini" />
+        <option value="$PROJECT_DIR$/logger/log_config.ini" />
+        <option value="$PROJECT_DIR$/planeGame/hero/Hero.py" />
+        <option value="$PROJECT_DIR$/logger/Logger.py" />
+        <option value="$PROJECT_DIR$/planeGame/entity/entity.py" />
+        <option value="$PROJECT_DIR$/convert/test/class_test_main.py" />
+        <option value="$PROJECT_DIR$/planeGame/entity/hero_plane.py" />
+        <option value="$PROJECT_DIR$/planeGame/main.py" />
+        <option value="$PROJECT_DIR$/planeGame/key_control.py" />
+        <option value="$PROJECT_DIR$/logger/logFile/2018.6.13-log" />
+        <option value="$PROJECT_DIR$/commun/logger/log_config.ini" />
+        <option value="$PROJECT_DIR$/commun/logger/Logger.py" />
+        <option value="$PROJECT_DIR$/docs/tempLog.txt" />
+        <option value="$PROJECT_DIR$/concurrente/main.py" />
       </list>
     </option>
   </component>
@@ -130,11 +119,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="960" />
-    <option name="y" value="35" />
-    <option name="width" value="960" />
-    <option name="height" value="920" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="367" />
+    <option name="y" value="86" />
+    <option name="width" value="950" />
+    <option name="height" value="678" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -152,18 +141,7 @@
             <path>
               <item name="daily-strutil" type="b2602c69:ProjectViewProjectNode" />
               <item name="daily-strutil" type="462c0819:PsiDirectoryNode" />
-              <item name="convert" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="daily-strutil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="daily-strutil" type="462c0819:PsiDirectoryNode" />
-              <item name="convert" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="daily-strutil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="daily-strutil" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrente" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -173,18 +151,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/convert/util" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/commun" />
+      <recent name="$PROJECT_DIR$/convert/util" />
+      <recent name="$PROJECT_DIR$/logger" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/string-handle/main/util" />
-      <recent name="$PROJECT_DIR$/string-handle/docs/output_data" />
-      <recent name="$PROJECT_DIR$/string-handle/docs/input_data" />
-      <recent name="$PROJECT_DIR$/string-handle/docs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -199,7 +177,45 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="Logger" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="daily-strutil" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/logger" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/logger/Logger.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="daily-strutil" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/concurrente" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/concurrente/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="daily-strutil" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -208,20 +224,27 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/convert" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/planeGame" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convert/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/planeGame/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.Logger" />
+      <item itemvalue="Python.main (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.Logger" />
       </list>
     </recent_temporary>
   </component>
@@ -243,55 +266,76 @@
       <option name="project" value="LOCAL" />
       <updated>1527770635967</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add convert method">
+      <created>1527850975200</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527850975200</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add convert method">
+      <created>1528543581977</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1528543581977</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add play plane">
+      <created>1528883755800</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528883755801</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="35" width="960" height="920" extended-state="4" />
+    <frame x="0" y="35" width="960" height="920" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" weight="0.37608966" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3283208" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24895833" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5005208" side_tool="true" weight="0.37593985" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2907268" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32992327" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24217118" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32736573" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947917" weight="0.39473686" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947917" weight="0.3934837" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32980973" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24895833" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24217118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3283208" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32980973" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29699248" />
       <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947917" weight="0.39473686" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32736573" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5005208" side_tool="true" weight="0.37608966" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32992327" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5005208" side_tool="true" weight="0.37593985" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947917" weight="0.3934837" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
@@ -304,7 +348,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="improve" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve" />
+    <MESSAGE value="add convert method" />
+    <MESSAGE value="add play plane" />
+    <option name="LAST_COMMIT_MESSAGE" value="add play plane" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -318,122 +364,24 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="28" />
+      <option name="time" value="43" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/convert/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/input_data/input_2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/input_data/input_1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/output_data/output_1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert/util/file_role.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1633">
-          <caret line="74" column="39" lean-forward="true" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert/util/convert_role.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert/util/file_role.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2162">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/output_data/output_1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert/util/file_role.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1472">
-          <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/output_data/output_1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert/util/file_role.py">
+    <entry file="file://$PROJECT_DIR$/commun/util/file_role.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1472">
           <caret line="67" column="20" lean-forward="true" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/convert/main.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/convert/util/file_role.py">
+    <entry file="file://$PROJECT_DIR$/commun/util/file_role.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -444,7 +392,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/test.txt">
+    <entry file="file://$PROJECT_DIR$/docs/tempLog.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1656">
           <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
@@ -458,7 +406,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/test.txt">
+    <entry file="file://$PROJECT_DIR$/docs/tempLog.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1656">
           <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
@@ -472,7 +420,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/test.txt">
+    <entry file="file://$PROJECT_DIR$/docs/tempLog.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1656">
           <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
@@ -486,53 +434,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/test.txt">
+    <entry file="file://$PROJECT_DIR$/docs/tempLog.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1656">
           <caret line="72" column="6" lean-forward="true" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert/test/test_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/daily-strutil/__init__.py" />
     <entry file="file://$PROJECT_DIR$/README" />
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert/test/study.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python3.6/_collections_abc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-609">
           <caret line="968" column="8" selection-start-line="968" selection-start-column="8" selection-end-line="968" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.6/logging/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="1123" column="4" selection-start-line="1123" selection-start-column="4" selection-end-line="1123" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -600,27 +514,181 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/convert/util/file_role.py">
+    <entry file="file://$PROJECT_DIR$/commun/util/convert_role.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1633">
-          <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
+        <state relative-caret-position="598">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commun/util/file_role.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26347">
+          <caret line="1158" column="28" selection-start-line="1158" selection-start-column="24" selection-end-line="1158" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planeGame/logger.py" />
+    <entry file="file://$PROJECT_DIR$/planeGame/sada" />
+    <entry file="file:///usr/local/lib/python3.6/ctypes/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="440" column="10" selection-start-line="440" selection-start-column="4" selection-end-line="440" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logger/name_config.py" />
+    <entry file="file:///usr/local/lib/python3.6/configparser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="439" column="17" lean-forward="true" selection-start-line="439" selection-start-column="17" selection-end-line="439" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-2016147871/pygame/display.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="142" column="4" selection-start-line="142" selection-start-column="4" selection-end-line="142" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/pygame/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4165">
+          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#3197#3552#0" />
+            <element signature="e#3594#3870#0" />
+            <element signature="e#3945#4411#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planeGame/entity/hero_plane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-2016147871/pygame/event.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planeGame/entity/entity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planeGame/key_control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="29" column="49" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="49" />
+          <folding>
+            <element signature="e#45#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planeGame/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+          <folding>
+            <element signature="e#15#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commun/logger/logFile/2018.6.13-log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convert/test/class_test_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convert/test/study.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convert/test/test_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/convert/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="69">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/convert/util/convert_role.py">
+    <entry file="file://$PROJECT_DIR$/commun/logger/Logger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="525">
+          <caret line="40" column="82" selection-start-line="40" selection-start-column="82" selection-end-line="40" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commun/logger/log_config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="72" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/tempLog.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-2016147871/posix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="349" column="4" selection-start-line="349" selection-start-column="4" selection-end-line="349" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/concurrente/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#40#102#0" />
+            <element signature="e#130#193#0" />
+            <element signature="e#243#829#0" />
+          </folding>
         </state>
       </provider>
     </entry>

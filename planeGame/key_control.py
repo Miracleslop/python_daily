@@ -1,5 +1,5 @@
 # from planeGame.entity.entity import Entity
-from logger.Logger import Logger
+from commun.logger.Logger import Logger
 import pygame
 from pygame.locals import *
 

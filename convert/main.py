@@ -1,4 +1,4 @@
-from convert.util.file_role import FileRole
+from commun.util.file_role import FileRole
 
 # fr = FileRole(r'/home/l/PycharmProjects/daily-strutil/docs/input_data', r'/home/l/PycharmProjects/daily-strutil/docs'
 #                                                                         r'/output_data')

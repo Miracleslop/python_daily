@@ -57,7 +57,7 @@ print(a)
 
 help(print)
 
-with open('/home/l/PycharmProjects/daily-strutil/docs/test.txt', 'r') as f:
+with open('/home/l/PycharmProjects/daily-strutil/docs/tempLog.txt', 'r') as f:
     print('read data : ' + f.read(3))
     position = f.tell()
     print("position:  %s" % position)

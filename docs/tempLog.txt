@@ -1,0 +1,7 @@
+[2018-06-15 13:49:12] - [main] - DEBUG - main begin! 
+[2018-06-15 13:49:12] - [main] - INFO - creat view, show windows and background img
+[2018-06-15 13:49:12] - [heroPlane] - DEBUG - HeroPlane.__init__ begin! 
+[2018-06-15 13:49:12] - [heroPlane] - INFO - creat HeroPlane
+[2018-06-15 13:49:12] - [heroPlane] - DEBUG - HeroPlane.__init__ end! and run time is 1 ms 
+[2018-06-15 13:49:15] - [keyControl] - DEBUG - game exit!
+[2018-06-15 13:49:15] - [main] - DEBUG - main end! and run time is 3244 ms 

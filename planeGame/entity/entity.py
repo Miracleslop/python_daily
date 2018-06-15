@@ -1,4 +1,4 @@
-from logger.Logger import Logger
+from commun.logger.Logger import Logger
 import pygame
 
 lg = Logger('entity')
