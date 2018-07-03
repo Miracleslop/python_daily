@@ -38,7 +38,7 @@ config.read('/home/l/PycharmProjects/daily-strutil/logger/log_config.ini')
 
 class Logger(object):
     def __init__(self, name, level=logging.DEBUG,
-                 file_path='/home/l/PycharmProjects/daily-strutil/docs/tempLog.txt'):
+                 file_path='/home/l/Documents/PycharmProjects/python_daily/docs/tempLog.txt'):
         self.logger = logging.getLogger(name)
         self.logger.setLevel(logging.DEBUG)
         # fmt = logging.Formatter('[%(asctime)s] [%(levelname)s] %(message)s', '%Y-%m-%d %H:%M:%S')
@@ -81,12 +81,12 @@ def log(msg, lg):
     # 所以这里直接传入 log 的引用 lg
     def decorator(func):
         def wrapper(*args, **kwargs):
-            lg.debug('%s begin! ' % func.__qualname__)
-            lg.info(msg)
+            lg.debug('<fun - %s> begin! ' % func.__qualname__)
+            lg.debug(msg)
             start_time = time.time()
             result = func(*args, **kwargs)
             end_time = time.time()
-            lg.debug('%s end! and run time is %.0f ms ' % (func.__qualname__, (end_time - start_time) * 1000))
+            lg.debug('<fun - %s> end!    run_time: %.0fms ' % (func.__qualname__, (end_time - start_time) * 1000))
             return result
 
         return wrapper

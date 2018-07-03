@@ -1,5 +1,5 @@
 from planeGame.entity.entity import Entity
-from commun.logger.Logger import log, Logger
+from commun.logger.clog import log, Logger
 
 lg = Logger('heroPlane')
 

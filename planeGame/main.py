@@ -1,7 +1,7 @@
 # coding=utf-8
 import pygame
-from commun.logger.Logger import Logger
-from commun.logger.Logger import log
+from commun.logger.clog import Logger
+from commun.logger.clog import log
 from planeGame.entity.hero_plane import HeroPlane
 from planeGame.key_control import KeyControl
 import time
