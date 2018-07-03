@@ -5,3 +5,22 @@
 [2018-06-15 13:49:12] - [heroPlane] - DEBUG - HeroPlane.__init__ end! and run time is 1 ms 
 [2018-06-15 13:49:15] - [keyControl] - DEBUG - game exit!
 [2018-06-15 13:49:15] - [main] - DEBUG - main end! and run time is 3244 ms 
+[2018-07-02 12:14:17] - [web_spider] - DEBUG - tieba_spider begin! 
+[2018-07-02 12:14:17] - [web_spider] - INFO - is spidering
+[2018-07-02 12:14:33] - [web_spider] - DEBUG - tieba_spider begin! 
+[2018-07-02 12:14:33] - [web_spider] - INFO - is spidering
+[2018-07-02 12:14:57] - [web_spider] - DEBUG - tieba_spider begin! 
+[2018-07-02 12:14:57] - [web_spider] - INFO - is spidering
+[2018-07-02 12:16:03] - [web_spider] - DEBUG - tieba_spider begin! 
+[2018-07-02 12:16:03] - [web_spider] - INFO - is spidering
+[2018-07-02 12:16:03] - [web_spider] - DEBUG - load_page begin! 
+[2018-07-02 12:16:03] - [web_spider] - INFO - downloading...
+[2018-07-02 12:16:11] - [web_spider] - DEBUG - tieba_spider begin! 
+[2018-07-02 12:16:11] - [web_spider] - INFO - is spidering
+[2018-07-02 12:16:59] - [web_spider] - DEBUG - tieba_spider begin! 
+[2018-07-02 12:16:59] - [web_spider] - INFO - is spidering
+[2018-07-02 12:17:07] - [web_spider] - DEBUG - load_page begin! 
+[2018-07-02 12:17:07] - [web_spider] - INFO - downloading...
+[2018-07-02 12:17:08] - [web_spider] - DEBUG - load_page end! and run time is 1407 ms 
+[2018-07-02 12:17:16] - [web_spider] - DEBUG - write_file begin! 
+[2018-07-02 12:17:16] - [web_spider] - INFO - is writing...

@@ -1,29 +1,31 @@
-from urllib.request import *
+from urllib import request
+from urllib import parse
 from commun.logger import Logger
-lg = Logger.Logger("web_crawler")
+
+lg = Logger.Logger("web_spider")
 
 
+@Logger.log('downloading...', lg)
 def load_page(url):
-    print('is downloading...')
     head = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
                       "Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134 "
     }
-    request = Request(url, headers=head)
-    request.add_header("Connection", "keep-alive")
-    response = urlopen(request)
-    html = response.read()
+    rqs = request.Request(url, headers=head)
+    rqs.add_header("Connection", "keep-alive")
+    rps = request.urlopen(rqs)
+    html = rps.read()
     return html
 
 
+@Logger.log('is writing...', lg)
 def write_file(content, path):
-    print('is writing...')
     with open(path, 'w') as f:
         f.write(content)
 
 
-
-def tieba_spider(url, beginPage, endPage):
+@Logger.log('is spidering', lg)
+def tieba_spider(url, begin_page, end_page):
     """
         作用：负责处理url，分配每个url去发送请求
         url：需要处理的第一个url
@@ -31,13 +33,13 @@ def tieba_spider(url, beginPage, endPage):
         endPage: 爬虫执行的截止页面
     """
 
-    for page in range(beginPage, endPage + 1):
+    for page in range(begin_page, end_page + 1):
         pn = (page - 1) * 50
 
-        filename = "page " + page + ".html"
-        fullurl = url + "&pn=" + pn
+        filename = "page " + str(page) + ".html"
+        full_url = '%s&pn=%d' % (url, pn)
 
-        html = load_page(fullurl)
+        html = load_page(full_url)
         write_file(html, filename)
 
 
@@ -46,5 +48,6 @@ if __name__ == "__main__":
     beginPage = 0
     endPage = 5
     url = "http://tieba.baidu.com/f?"
-    key = {"kw": kw}
-    url += key
+    key = parse.urlencode({"kw": kw})
+    url += str(key)
+    tieba_spider(url, beginPage, endPage)
