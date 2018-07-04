@@ -14,50 +14,26 @@ class FilterStrategy(object):
         """
         self.__text = text
         self.__len = len(text)
+        self.__switch = {
+            '<scr': ('<script', '</script>', self.__skip_by_start),
+            '<!--': ('<!--', '-->', self.__skip_by_end),
+            '<lin': ('<link', '/>', self.__skip_by_end),
+            '<cod': ('<code', '</code>', self.__skip_by_start)
+        }
 
-    def __skip_script(self, i):
-        """
-        从下标i开始匹配<script>...</script>，并过滤
-        :param i:开始匹配的text下标 
-        :return:返回-1表示匹配失败，否则返回</script>后面第一个字符的下标
-        """
-        self.__end_sign = ['</script>', '<html>', '</html>', '<head>', '</head>']
-        scr_str = '<script>'
-        scr_len = len(scr_str)
-        if self.__text[i:i + scr_len] != scr_str:
-            return -1
+    def __skip_by_end(self, i, end_sign):
+        end_len = len(end_sign)
+        if self.__text[i] == '>' and self.__text[i - end_len + 1: i + 1] == end_sign:
+            return 1
+        else:
+            return 0
 
-        # i调转到<script>后面第一个字符的下标
-        i += scr_len
-
-        # 搜寻</script>
-        while i < self.__len:
-            if self.__text[i] == '<' and self.__text[i + 1] != '!':
-                try:
-                    tag_end_in = self.__text.index('>', i)
-                    tag_str = self.__text[i:tag_end_in + 1]
-                    self.__end_sign.index(tag_str)
-                    i = tag_end_in + 1
-                    break
-                except ValueError:
-                    pass
-            i += 1
-        return i
-
-    def __skip_annotation(self, i):
-        end_sign = "-->"
-        ann_str = "<!--"
-        ann_len = len(ann_str)
-        if self.__text[i:i + ann_len] != ann_str:
-            return -1
-        i += ann_len
-        while i < self.__len:
-            if self.__text[i] == '>':
-                if self.__text[i - 2:i + 1] == end_sign:
-                    i += 1
-                    break
-            i += 1
-        return i
+    def __skip_by_start(self, i, end_sign):
+        end_len = len(end_sign)
+        if self.__text[i] == '<' and self.__text[i:i + end_len] == end_sign:
+            return end_len
+        else:
+            return 0
 
     @clog.log('filter script content ! ', lg)
     def filter(self):
@@ -67,22 +43,26 @@ class FilterStrategy(object):
         i = 0
         while i < self.__len:
             if self.__text[i] == '<':
+                sel = self.__switch.get(self.__text[i:i + 4])
+                if sel is not None:
+                    sel_len = len(sel[0])
+                    if self.__text[i:i + sel_len] == sel[0]:
+                        io_text.write(self.__text[old_i:i])
 
-                # 判断<script>...</script>，并过滤
-                scp_sign = self.__skip_script(i)
-                if scp_sign != -1:
-                    io_text.write(self.__text[old_i:i])
-                    i = scp_sign
-                    old_i = scp_sign
-                    continue
+                        # i调转到<script后面第一个字符的下标
+                        i += sel_len
 
-                # 判断<!-- ...  --> ，并过滤
-                ann_sign = self.__skip_annotation(i)
-                if ann_sign != -1:
-                    io_text.write(self.__text[old_i:i])
-                    i = ann_sign
-                    old_i = ann_sign
-                    continue
+                        #
+                        while i < self.__len:
+                            step = sel[2](i, sel[1])
+                            if step != 0:
+                                i += step
+                                break
+                            i += 1
+
+                        #
+                        old_i = i
+                        continue
             i += 1
 
         res_text = io_text.getvalue()
