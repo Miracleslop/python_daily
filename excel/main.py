@@ -2,20 +2,30 @@ from xlrd import *
 
 
 class excel(object):
+    """
+    read excel class
+    """
     def __init__(self, wb):
         self.__workbook = open_workbook(wb)
 
     def sheet(self, i):
         return self.__workbook.sheet_by_index(i)
 
-    def handle(self, i, fun):
-        for rw in self.sheet(i).get_rows():
-            trw = [str(x.value) for x in rw]
+    def handle(self, i, fun, r=None):
+        def th(_rw: []):
+            trw = [str(x.value) for x in _rw]
             for x in trw:
                 print('%s' % x, end=';')
             for x in fun(trw):
                 print('%s' % x, end=';')
             print()
+
+        if not r:
+            for rw in self.sheet(i).get_rows():
+                th(rw)
+        else:
+            rw = self.sheet(i).row(r)
+            th(rw)
 
 
 def synom_clear(rw: list):
@@ -52,6 +62,36 @@ def synom_clear(rw: list):
     return [nrw[0], nrw[1], ret]
 
 
-if __name__ == '__main__':
+if __name__ == '__main__1':
     ins = excel('/home/l/文档/synom.xlsx')
     ins.handle(2, synom_clear)
+
+ret = ''
+
+
+def findTable(key):
+    pass
+
+
+if __name__ == '__main__2':
+    """
+    findTable 
+    """
+    with open('/home/l/文档/db.sql', 'r') as f:
+        isFind = False
+        for line in f.readlines():
+            if line.startswith('CREATE'):
+                ret = ''
+                ret += line
+                isFind = False
+            elif line.startswith(') ENGINE') and isFind:
+                ret += line
+                print(ret)
+                ret = ''
+                isFind = False
+            elif line.count('sku') > 0:
+                ret += line
+                isFind = True
+            else:
+                ret += line
+
