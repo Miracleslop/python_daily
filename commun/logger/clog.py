@@ -38,9 +38,9 @@ config.read('/home/l/PycharmProjects/daily-strutil/logger/log_config.ini')
 
 class Logger(object):
     def __init__(self, name, level=logging.DEBUG,
-                 file_path='/home/l/Documents/PycharmProjects/python_daily/docs/tempLog.txt'):
+                 file_path='/home/l/PycharmProjects/python_daily/docs/tempLog.txt'):
         self.logger = logging.getLogger(name)
-        self.logger.setLevel(logging.DEBUG)
+        self.logger.setLevel(level)
         # fmt = logging.Formatter('[%(asctime)s] [%(levelname)s] %(message)s', '%Y-%m-%d %H:%M:%S')
         fmt = logging.Formatter('[%(asctime)s] - [%(name)s] - %(levelname)s - %(message)s', '%Y-%m-%d %H:%M:%S')
 
@@ -52,7 +52,7 @@ class Logger(object):
         # 设置文件日志
         fh = logging.FileHandler(file_path)
         fh.setFormatter(fmt)
-        fh.setLevel(level)
+        fh.setLevel(logging.INFO)
         self.logger.addHandler(sh)
         self.logger.addHandler(fh)
 
